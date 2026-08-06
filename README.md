@@ -16,9 +16,9 @@ The goal of this repository is to track my personal growth, apply core theoretic
 
 Each folder in this repository contains an individual solo project with its own source code and assets.
 
-| Folder / Project                  | Description                     | Key Concepts Learned                            |    Status    |
-| :-------------------------------- | :------------------------------ | :---------------------------------------------- | :----------: |
-| [`/digitalClock`](./digitalClock) | Real-time digital clock display | DOM manipulation, Centered layout using Flexbox | ✅ Completed |
+| Folder / Project                                                                               | Description                     | Key Concepts Learned                            |    Status    |
+| :--------------------------------------------------------------------------------------------- | :------------------------------ | :---------------------------------------------- | :----------: |
+| [https://histeria13.github.io/JS/digitalClock/](https://histeria13.github.io/JS/digitalClock/) | Real-time digital clock display | DOM manipulation, Centered layout using Flexbox | ✅ Completed |
 
 > _Note: This project list is continuously updated as new projects are created._
 
