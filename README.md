@@ -23,13 +23,3 @@ Each folder in this repository contains an individual solo project with its own 
 > _Note: This project list is continuously updated as new projects are created._
 
 ---
-
-## 🚀 How to Run Locally
-
-If you would like to test any of the projects on your local machine:
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-   ```
