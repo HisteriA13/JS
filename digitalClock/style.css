@@ -29,13 +29,16 @@ svg {
 }
 
 h1 {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0 3px;
+  border-radius: 15px;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-size: 1.2rem;
   font-weight: 900;
   text-align: center;
   color: rgb(41, 91, 61);
-  text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
 }
 
 .clock {
