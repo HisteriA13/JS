@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bones";
+  src: url(font/bonesOfMuertos.ttf);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bones", sans-serif;
+  background: url(img/paws.gif);
+  color: #000;
+}
+
+.dog-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+
+.container {
+  width: 450px;
+  background-color: rgb(240, 248, 255, 0.8);
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.btn {
+  margin: 30px 0;
+  padding: 10px 30px;
+  background: #000;
+  color: aliceblue;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn:disabled {
+  background: grey;
+  cursor: not-allowed;
+}
