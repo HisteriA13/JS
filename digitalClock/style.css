@@ -20,12 +20,11 @@ body {
   position: relative;
 }
 
-svg {
+#logo {
   position: absolute;
-  width: 100px;
-  height: auto;
   top: 0;
   left: 0;
+  width: 10%;
 }
 
 h1 {

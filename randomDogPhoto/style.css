@@ -21,6 +21,13 @@ body {
   color: #000;
 }
 
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+}
+
 .dog-img {
   width: 300px;
   height: 300px;
