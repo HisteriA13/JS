@@ -16,9 +16,10 @@ The goal of this repository is to track my personal growth, apply core theoretic
 
 Each folder in this repository contains an individual solo project with its own source code and assets.
 
-| Folder / Project                                                                               | Description                     | Key Concepts Learned                            |    Status    |
-| :--------------------------------------------------------------------------------------------- | :------------------------------ | :---------------------------------------------- | :----------: |
-| [https://histeria13.github.io/JS/digitalClock/](https://histeria13.github.io/JS/digitalClock/) | Real-time digital clock display | DOM manipulation, Centered layout using Flexbox | ✅ Completed |
+| Live Page                                                           | Repository                             |     |           Description           | Key Concepts Learned                            | Status         |
+| :------------------------------------------------------------------ | :------------------------------------- | :-- | :-----------------------------: | ----------------------------------------------- | -------------- |
+| [Digital Clock](https://histeria13.github.io/JS/digitalClock/)      | [./digitalClock/](./digitalClock/)     |     | Real-time digital clock display | DOM manipulation, Centered layout using Flexbox | ✅ Completed   |
+| [Random Dog Photo](https://histeria13.github.io/JS/randomDogPhoto/) | [./randomDogPhoto/](./randomDogPhoto/) |     |        Random image API         | DOM manipulation, Working with API              | ⏳ In progress |
 
 > _Note: This project list is continuously updated as new projects are created._
 

@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Bones";
-  src: url(font/bonesOfMuertos.ttf);
+  src: url(assets/font/bonesOfMuertos.ttf);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Bones", sans-serif;
-  background: url(img/paws.gif);
+  background: url(assets/img/paws.gif);
   color: #000;
 }
 

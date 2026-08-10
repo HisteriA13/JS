@@ -9,11 +9,10 @@ async function getPhoto() {
   try {
     btnEl.disabled = true;
     btnEl.textContent = "Loading...";
-    imgEl.src = "img/loading.svg";
+    imgEl.src = "assets/img/loading.svg";
 
     const response = await fetch("https://dog.ceo/api/breeds/image/random");
     const data = await response.json();
-    console.log(data);
 
     btnEl.disabled = false;
     btnEl.textContent = "Woof!";
