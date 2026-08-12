@@ -1,14 +1,12 @@
+@font-face {
+  font-family: "Bones";
+  src: url(assets/font/bonesOfMuertos.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* variables??? */
-
-@font-face {
-  font-family: "Bones";
-  src: url(assets/font/bonesOfMuertos.ttf);
 }
 
 body {
@@ -26,6 +24,8 @@ body {
   top: 0;
   left: 0;
   width: 10%;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(56deg) brightness(106%) contrast(104%);
 }
 
 .dog-img {
