@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Hypnotic";
+  src: url(assets/font/hypnotic.otf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,5 +14,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: center / cover no-repeat url(img/background.png);
+  background: center / cover no-repeat url(assets/img/background.png);
+  overflow: hidden;
+  filter: blur(0);
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  filter: brightness(0) saturate(100%) invert(85%) sepia(97%) saturate(797%)
+    hue-rotate(311deg) brightness(107%) contrast(94%);
+}
+
+.percentage {
+  font-size: 4.5rem;
+  font-family: "Hypnotic", Arial, Helvetica, sans-serif;
 }
