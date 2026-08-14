@@ -48,3 +48,10 @@ body {
   font-size: 4.5rem;
   font-family: "Hypnotic", Arial, Helvetica, sans-serif;
 }
+
+/* center the leaf on mobile devices */
+@media (max-width: 768px) {
+  .background {
+    background-position: 47% center;
+  }
+}
