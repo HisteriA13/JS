@@ -124,7 +124,6 @@ video {
 }
 
 /* PULSE-SHADOW */
-
 @keyframes pulse-shadow {
   0% {
     box-shadow: 0 0 10px rgb(0, 0, 253, 0.5);
@@ -137,16 +136,18 @@ video {
   }
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 991px) {
   #movie video {
     width: 90%;
   }
 }
 
+/* LANDSCAPE ORIENTATION */
 @media screen and (orientation: landscape) and (max-height: 500px) {
   html,
   body {
-    /* Sprečavamo pojavu neželjenih scrollbar-ova tokom rotacije */
+    /* disable schroll */
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -163,7 +164,7 @@ video {
     position: absolute;
     top: 100%;
     left: 0;
-    /* enabling scroll */
+    /* enable scroll */
     overflow-y: auto;
   }
 
