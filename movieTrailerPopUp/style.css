@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +32,23 @@ body {
 .container .thumbnail {
   width: 100%;
   height: 100%;
-  clip-path: polygon(87% 0, 100% 50%, 88% 100%, 0% 100%, 10% 52%, 0% 0%);
+  clip-path: polygon(
+    50% 0,
+    97% 8%,
+    98% 35%,
+    93% 68%,
+    100% 100%,
+    49% 94%,
+    0 100%,
+    10% 66%,
+    0 39%,
+    5% 4%
+  );
   opacity: 0.9;
 }
 
 .container h1 {
-  font-family: "Jim Nightshade", sans-serif;
+  font-family: "Jim Nightshade", serif;
   font-size: 3rem;
   letter-spacing: 0.09rem;
   margin-top: 10px;
@@ -48,27 +57,39 @@ body {
 
 .container .text::first-letter {
   font-size: 30px;
+  font-family: "Jim Nightshade", serif;
+  font-weight: 600;
 }
 
 .container .text {
+  font-family: "Montserrat", serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.3rem;
   margin-bottom: 30px;
+  text-align: justify;
+  text-align-last: right;
 }
 
 .container .btn {
-  font-size: 1rem;
-  padding: 10px 15px;
+  font-family: "Jim Nightshade", serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 12px;
   border: none;
   outline: none;
   border-radius: 5px;
-  font-weight: bold;
-  color: #007bff;
-  background-color: #fff;
+  color: #0e2f52;
+  background-color: transparent;
   cursor: pointer;
-  animation: pulse-shadow 4s infinite ease-in-out;
+  animation: pulse-shadow 3s infinite ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .container .btn:hover {
-  opacity: 0.8;
+  transform: scale(1.1, 1.1);
 }
 
 #movie {
@@ -93,12 +114,8 @@ video {
   position: absolute;
   right: 30px;
   top: 30px;
-  background: rgba(255, 255, 255, 0.7);
-  color: #000;
-  font-size: 1.8rem;
-  font-weight: 900;
-  padding: 5px;
-  border-radius: 20%;
+  color: hsl(36, 88%, 84%);
+  font-size: 2.1rem;
   cursor: pointer;
 }
 
@@ -113,7 +130,7 @@ video {
     box-shadow: 0 0 10px rgb(0, 0, 253, 0.5);
   }
   50% {
-    box-shadow: 0 0 40px rgb(0, 0, 253, 1);
+    box-shadow: 0 0 25px rgb(0, 0, 253, 1);
   }
   100% {
     box-shadow: 0 0 10px rgba(0, 0, 253, 0.5);
@@ -123,5 +140,34 @@ video {
 @media (max-width: 991px) {
   #movie video {
     width: 90%;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  html,
+  body {
+    /* Sprečavamo pojavu neželjenih scrollbar-ova tokom rotacije */
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  body {
+    /* rotating the whole page */
+    transform: rotate(-90deg);
+    /* rotation point */
+    transform-origin: top left;
+    /* width and height change places */
+    width: 100vh;
+    height: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* enabling scroll */
+    overflow-y: auto;
+  }
+
+  video {
+    transform: rotate(90deg);
   }
 }
