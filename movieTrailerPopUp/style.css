@@ -1,7 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: center / cover no-repeat url(assets/img/background.jpg);
 }
 
 #logo {
@@ -13,73 +23,105 @@
     hue-rotate(333deg) brightness(98%) contrast(102%);
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: center / cover no-repeat url(assets/img/background.jpg);
-}
-
 .container {
-  max-width: 800px;
-  margin-inline: 20px;
-  padding: 20px;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 600px;
   background: rgba(255, 255, 255, 0.3);
+  margin: 0 10px;
+  padding: 50px;
+  border-radius: 30px;
 }
 
 .container .thumbnail {
   width: 100%;
   height: 100%;
+  clip-path: polygon(87% 0, 100% 50%, 88% 100%, 0% 100%, 10% 52%, 0% 0%);
   opacity: 0.9;
 }
 
 .container h1 {
-  font-size: 2.5rem;
-  margin: 20px 0 10px 0;
+  font-family: "Jim Nightshade", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.09rem;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .container .text::first-letter {
   font-size: 30px;
 }
 
+.container .text {
+  margin-bottom: 30px;
+}
+
 .container .btn {
   font-size: 1rem;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 10px 15px;
   border: none;
-  margin-top: 20px;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #007bff;
+  background-color: #fff;
+  cursor: pointer;
+  animation: pulse-shadow 4s infinite ease-in-out;
 }
 
 .container .btn:hover {
   opacity: 0.8;
 }
 
-.movie {
-  position: absolute;
+#movie {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
-  width: 75%;
-  visibility: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-.movie video {
-  width: 100%;
+video {
+  position: relative;
+  max-width: 900px;
 }
 
 .close {
   position: absolute;
-  color: #000;
-  font-weight: 900;
-  right: -40px;
-  top: -25px;
-  font-size: 1.8rem;
+  right: 30px;
+  top: 30px;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 20%;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 900;
   padding: 5px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+#movie.hide {
+  visibility: hidden;
+}
+
+/* PULSE-SHADOW */
+
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 10px rgb(0, 0, 253, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgb(0, 0, 253, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 253, 0.5);
+  }
+}
+
+@media (max-width: 991px) {
+  #movie video {
+    width: 90%;
+  }
 }
