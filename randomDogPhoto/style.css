@@ -10,13 +10,14 @@
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Bones", sans-serif;
   background: url(assets/img/paws.gif);
   color: #000;
+  position: relative;
 }
 
 #logo {
