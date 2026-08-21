@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 60%;
+  height: 80vh;
+  display: flex;
+  column-gap: 10px;
+}
+
+.slide {
+  flex: 0.5;
+  min-width: 0;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+
+.one {
+  background: url("img/spring.png");
+  background-position: 40%;
+  background-size: cover;
+}
+
+.two {
+  background: url("img/summer.png");
+}
+
+.three {
+  background: url("img/autmn.png");
+}
+
+.four {
+  background: url("img/winter.png");
+}
+
+.slide:hover {
+  flex: 10;
+}
+
+.slide h3 pre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 10px;
+  color: aliceblue;
+}
