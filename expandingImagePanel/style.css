@@ -20,15 +20,15 @@ body {
   top: 0;
   left: 0;
   width: 10%;
-  filter: brightness(0) saturate(100%) invert(89%) sepia(36%) saturate(300%)
-    hue-rotate(333deg) brightness(98%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
+    hue-rotate(315deg) brightness(106%) contrast(78%);
 }
 
 .container {
-  width: 60%;
-  height: 80vh;
+  width: 70%;
+  height: 90dvh;
   display: flex;
-  column-gap: 10px;
+  gap: 10px;
   overflow: hidden;
 }
 
@@ -36,9 +36,11 @@ body {
   flex: 1;
   min-width: 0;
   height: 100%;
+  border: 0.3px solid aliceblue;
+  border-radius: 20px;
   position: relative;
-  border-radius: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  /* why the background property dosn`t work here?! */
 }
 
 .one {
@@ -89,6 +91,7 @@ body {
 /* js */
 .active {
   flex: 10;
+  overflow: hidden;
 }
 
 .active pre {
@@ -101,7 +104,8 @@ body {
   }
 
   .active {
-    flex: 3;
+    flex: 7;
+    transition: 1.3s;
   }
 
   .three {
@@ -126,9 +130,9 @@ body {
 
 .active pre {
   animation-name: slideUpAnimation;
-  animation-duration: 1s;
+  animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
   /* animation-iteration-count: 1; */
   /* animation-direction: normal; */
   animation-fill-mode: both;
