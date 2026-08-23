@@ -22,7 +22,7 @@ Each folder in this repository contains an individual solo project with its own 
 | [Random Dog Photo](https://histeria13.github.io/JS/randomDogPhoto/)           | [./randomDogPhoto/](./randomDogPhoto/)           |     |        Random image API         | DOM manipulation, Working with API              | ✅ Completed   |
 | [Loading Blur](https://histeria13.github.io/JS/loadingBlur/)                  | [./loadingBlur/](./loadingBlur/)                 |     |       Loading blur effect       | Scale function, Working with filter `blur()`    | ✅ Completed   |
 | [Movie Trailer Pop-Up](https://histeria13.github.io/JS/movieTrailerPopUp/)    | [./movieTrailerPopUp/](./movieTrailerPopUp/)     |     |   Custom Movie Trailer Pop-Up   | Css Animation, `.classList()`, window event     | ✅ Completed   |
-| [Expanding Image Panel](https://histeria13.github.io/JS/expandingImagePanel/) | [./expandingImagePanel/](./expandingImagePanel/) |     |       Image Gallery Panel       |                                                 | ⏳ In progress |
+| [Expanding Image Panel](https://histeria13.github.io/JS/expandingImagePanel/) | [./expandingImagePanel/](./expandingImagePanel/) |     |       Image Gallery Panel       | `@keyframes`, `@mediaquery`, `forEach()`        | ⏳ In progress |
 
 > _Note: This project list is continuously updated as new projects are created._
 
