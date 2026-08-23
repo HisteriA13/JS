@@ -36,38 +36,28 @@ body {
   flex: 1;
   min-width: 0;
   height: 100%;
-  border: 0.3px solid aliceblue;
+  border: 1px solid aliceblue;
   border-radius: 20px;
   position: relative;
-  transition: all 0.8s ease-in-out;
-  /* why the background property dosn`t work here?! */
+  transition: flex 0.8s ease-in-out;
+  /* why doesn`t the background property work here?! */
 }
 
+/* AI generated images */
 .one {
-  background: url("img/spring.png");
-  background-position: 40%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("img/spring.png") 65% / cover no-repeat;
 }
 
 .two {
-  background: url("img/summer.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("img/summer.png") 31% / cover no-repeat;
 }
 
 .three {
-  background: url("img/autmn.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("img/autmn.png") 59% / cover no-repeat;
 }
 
 .four {
-  background: url("img/winter.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("img/winter.png") 28% / cover no-repeat;
 }
 
 .slide pre {
@@ -75,17 +65,17 @@ body {
   bottom: 10px;
   left: 0;
   width: fit-content;
-  font-family: "Slackside One", cursive;
+  background: linear-gradient(170deg, #0f0c29 0%, #302b63 49%, #24243e 75%);
+  color: #ffbbbe;
+  text-align: center;
+  font-family: cursive;
   font-size: clamp(1rem, 2vw, 1.3rem);
   font-weight: 200;
-  background: #212121;
-  padding: 0 10px;
-  border-radius: 0 10px 10px 0;
-  color: aliceblue;
-  opacity: 0;
+  letter-spacing: 0.1rem;
   white-space: pre-wrap;
-  /* word-wrap: break-word;  */
-  transition: opacity 0.5s ease 0.3s;
+  padding: 5px 10px;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
 }
 
 /* js */
@@ -96,8 +86,10 @@ body {
 
 .active pre {
   opacity: 1;
+  animation: slideUp 1.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
 }
 
+/* media query and animation */
 @media (max-width: 550px) {
   .container {
     flex-direction: column;
@@ -108,16 +100,12 @@ body {
     transition: 1.3s;
   }
 
-  .three {
-    background-position: 50%;
-  }
-
-  .four {
-    background-position: center;
+  .active pre {
+    font-size: 0.7rem;
   }
 }
 
-@keyframes slideUpAnimation {
+@keyframes slideUp {
   0% {
     transform: translateY(100px);
     opacity: 0;
@@ -126,14 +114,4 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.active pre {
-  animation-name: slideUpAnimation;
-  animation-duration: 1.4s;
-  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  animation-delay: 0.4s;
-  /* animation-iteration-count: 1; */
-  /* animation-direction: normal; */
-  animation-fill-mode: both;
 }
