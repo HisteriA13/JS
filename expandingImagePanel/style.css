@@ -101,7 +101,7 @@ body {
   }
 
   .active pre {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 100%;
     border-radius: 0;
   }
