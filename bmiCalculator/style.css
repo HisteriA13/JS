@@ -9,8 +9,8 @@
   top: 0;
   left: 0;
   width: 10%;
-  filter: brightness(0) saturate(100%) invert(43%) sepia(15%) saturate(7494%)
-    hue-rotate(359deg) brightness(100%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(70%) saturate(839%)
+    hue-rotate(359deg) brightness(101%) contrast(103%);
 }
 
 body {
@@ -18,15 +18,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("img/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("img/background.jpg") center / cover no-repeat;
+  position: relative;
+  color: whitesmoke;
 }
 
 .container {
   width: 500px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 5/4;
   margin: 20px;
   background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
 }
