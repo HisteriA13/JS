@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(15%) saturate(7494%)
+    hue-rotate(359deg) brightness(100%) contrast(106%);
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 500px;
+  aspect-ratio: 1/1;
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
