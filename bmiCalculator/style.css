@@ -27,14 +27,47 @@ body {
   width: 500px;
   aspect-ratio: 5/4;
   margin: 20px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 1);
 }
 
 h1 {
   font-size: 1.7rem;
   margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: rgb(42, 32, 43);
+}
+
+input {
+  width: 80%;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  padding-left: 5px;
+  margin: 10px auto;
+}
+
+#btn {
+  width: 100px;
+  padding: 5px 0;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  background: transparent;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  color: inherit;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"] {
+  background: transparent;
+  outline: none;
+  width: 10%;
+  font-weight: 600;
 }
