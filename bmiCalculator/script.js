@@ -46,7 +46,7 @@ btnEl.addEventListener("click", () => {
     weightCondition.textContent = key;
     message.textContent = msgs[key];
 
-    message.style.transition = "opacity 3s ease";
+    message.style.transition = "opacity 4s ease";
     message.style.opacity = "1";
   }, 50);
 });
