@@ -21,6 +21,7 @@ const message = document.querySelector(".message");
 btnEl.addEventListener("click", () => {
   // variables must be within the function
   // calculation in the moment of mouse click
+  // Equation: BMI = weight (kg) / [height (m)]²
   const height = Number(inputHeightEl.value / 100);
   const weight = Number(inputWeightEl.value);
   const bmi = weight / (height * height);
