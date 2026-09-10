@@ -24,8 +24,8 @@ A simple JavaScript project built independently to practice DOM manipulation, wo
 
 - Custom SVG logo branding
 
-## What I Learned
+## Screenshots
 
-- Accessing and formatting time data using `Date` object (`getHours()`, `getMinutes()`, `getSeconds()`)
+Index
 
-- Embedding and styling custom SVG elements directly in HTML
+<img src="screenshots/index.png" alt="" style="width: 400px; height: auto;">

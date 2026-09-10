@@ -18,8 +18,16 @@ BMI Calculator with motivation message
 
 - Time Interval
 
-## What I Learned
+## Screenshots
 
-- JavaScript Object
+Before
 
-- `setTimeout()`
+<img src="screenshots/before.png" alt="" style="width: 400px; height: auto;">
+
+After
+
+<img src="screenshots/after.png" alt="" style="width: 400px; height: auto;">
+
+Landscape
+
+<img src="screenshots/landscape.png" alt="" style="width: 400px; height: auto;">

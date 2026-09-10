@@ -22,8 +22,12 @@ Custom Movie Trailer Pop-Up
 
 - Hidden visibility for JavaScript
 
-## What I Learned
+## Screenshots
 
-- `.classList()`
+Index
 
-- video `pause()` and `currentTime`
+<img src="screenshots/index.png" alt="" style="width: 400px; height: auto;">
+
+Modal Video
+
+<img src="screenshots/modalVideo.png" alt="" style="width: 400px; height: auto;">

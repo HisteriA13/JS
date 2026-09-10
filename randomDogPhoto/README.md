@@ -20,8 +20,12 @@ A simple JavaScript project built independently to practice DOM manipulation, wo
 
 - Custom SVG loading
 
-## What I Learned
+## Screenshots
 
-- Working with APIs (`fetch()`, `try()`, `catch()`, `await`)
+Index
 
-- Styling custom SVG element
+<img src="screenshots/index.png" alt="" style="width: 400px; height: auto;">
+
+After
+
+<img src="screenshots/after.png" alt="" style="width: 400px; height: auto;">
