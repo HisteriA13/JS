@@ -11,6 +11,72 @@
   top: 0;
   left: 0;
   width: 10%;
+  min-width: 60px;
   filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
     hue-rotate(315deg) brightness(106%) contrast(78%);
+}
+
+body {
+  min-height: calc(100dvh - 50px);
+  padding: 50px 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  max-width: 27rem;
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+}
+
+.title {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input {
+  padding: 0 0.5rem;
+  width: 70%;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.btn {
+  background: #000;
+  border: none;
+  flex: 1;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
