@@ -18,7 +18,7 @@
 
 body {
   min-height: calc(100dvh - 50px);
-  padding: 50px 1rem 0 1rem;
+  padding: 50px 1rem 1rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -79,6 +79,22 @@ body {
   background: #fff;
   color: #000;
   border: 1px solid #000;
+}
+
+/* LOADING */
+.loading {
+  display: none;
+}
+.loading svg {
+  margin: auto;
+}
+
+/* ERROR */
+.error {
+  display: none;
+  margin: 1rem;
+  text-align: center;
+  color: red;
 }
 
 .results {
