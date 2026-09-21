@@ -24,7 +24,7 @@ Each folder in this repository contains an individual solo project with its own 
 | [Movie Trailer Pop-Up](https://histeria13.github.io/JS/movieTrailerPopUp/)    | [./movieTrailerPopUp/](./movieTrailerPopUp/)     |   Custom Movie Trailer Pop-Up   | Css Animation, `.classList()`, window event               | ✅ Completed   |
 | [Expanding Image Panel](https://histeria13.github.io/JS/expandingImagePanel/) | [./expandingImagePanel/](./expandingImagePanel/) |       Image Gallery Panel       | `@keyframes`, `@mediaquery`, `forEach()`                  | ✅ Completed   |
 | [BMI Calculator](https://histeria13.github.io/JS/bmiCalculator/)              | [./bmiCalculator/](./bmiCalculator/)             |         BMI Calculator          | JS Object, `setTimeout()`                                 | ✅ Completed   |
-| [Wikipedia Search](https://histeria13.github.io/JS/searchWikipedia/)          | [./searchWikipedia/](./searchWikipedia/)         |        Wikipedia Search         |                                                           | ⏳ In progress |
+| [Wikipedia Search](https://histeria13.github.io/JS/searchWikipedia/)          | [./searchWikipedia/](./searchWikipedia/)         |        Wikipedia Search         | API, async, `classList`                                   | ⏳ In progress |
 
 > _Note: This project list is continuously updated as new projects are created._
 

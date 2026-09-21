@@ -27,13 +27,13 @@
                     <img class="img" src="img/wikipediaLogo.png" alt="Wikipedia Logo" aria-hidden="true">
                 </figure>
                 <h1 class="title">Wikipedia Search</h1>
-                <form class="form">
-                    <input type="text" class="input">
-                    <button type="submit" class="btn">Search</button>
-                </form>
             </div>
+            <form class="form">
+                <input type="text" class="input">
+                <button type="submit" class="btn">Search</button>
+            </form>
 
-            <div class="loading">
+            <div class="loading hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200"
                     height="200" style="shape-rendering: auto; display: block; background: rgb(255, 255, 255);"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -48,15 +48,23 @@
                 </svg>
             </div>
 
-            <div class="error">
+            <div class="errorEmpty hidden">
+                <p>Please enter valid search term.</p>
+            </div>
+            <div class="errorNetwork hidden">
                 <p>There was an error...</p>
             </div>
+            <div class="errorResults hidden">
+                <p>No matching results...</p>
+            </div>
 
-            <div class="results">
+            <div class="result">
 
-                <div class="result">
+                <!-- <div class="result">
                     <h2>Title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, delectus. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Quasi optio nesciunt, nulla voluptatum doloremque maiores
+                        atque totam facere commodi quidem?</p>
                 </div>
                 <div class="result">
                     <h2>Title</h2>
@@ -65,7 +73,7 @@
                 <div class="result">
                     <h2>Title</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, delectus.</p>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>

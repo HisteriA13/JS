@@ -17,7 +17,7 @@
 }
 
 body {
-  min-height: calc(100dvh - 50px);
+  min-height: calc(100dvh - 100px);
   padding: 50px 1rem 1rem;
   display: flex;
   justify-content: center;
@@ -27,8 +27,13 @@ body {
 .container {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+/* HEADING */
 .heading {
   width: 100%;
   padding: 0 2rem;
@@ -49,28 +54,28 @@ body {
   font-size: 2.5rem;
 }
 
+/* FORM */
 .form {
-  width: 100%;
-  max-width: 27rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .input {
   padding: 0 0.5rem;
-  width: 70%;
+  flex: 1;
   line-height: 1.5;
   font-size: 1.3rem;
 }
 
 .btn {
+  border: 1px solid #000;
+  outline: none;
   background: #000;
-  border: none;
-  flex: 1;
-  border-radius: 5px;
   color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .btn:hover,
@@ -78,25 +83,20 @@ body {
 .btn:active {
   background: #fff;
   color: #000;
-  border: 1px solid #000;
-}
-
-/* LOADING */
-.loading {
-  display: none;
-}
-.loading svg {
-  margin: auto;
 }
 
 /* ERROR */
-.error {
-  display: none;
+.errorEmpty,
+.errorNetwork {
   margin: 1rem;
-  text-align: center;
   color: red;
 }
 
+.hidden {
+  display: none;
+}
+
+/* RESULTS */
 .results {
   width: 100%;
   height: auto;
@@ -106,18 +106,42 @@ body {
   gap: 1rem;
 }
 
-.result {
-  background: gray;
+a {
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
   padding: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
+  transition: 0.5s;
 }
 
-.result:hover {
-  background: rgba(0, 0, 0, 0.4);
+a h2 {
+  margin-bottom: 1rem;
+}
+
+a p {
+  line-height: 1.5rem;
+}
+
+a:hover {
+  background: gainsboro;
+  color: #000;
+  transform: scale(0.98);
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1024px) {
+  .results {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 426px) {
   .results {
     grid-template-columns: 1fr;
   }
