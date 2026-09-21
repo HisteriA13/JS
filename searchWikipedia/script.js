@@ -4,7 +4,7 @@
 // format=json json response
 // "origin=*" fix cors errors
 const URL =
-  "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=20&format=json&origin=*&srsearch=";
+  "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=50&format=json&origin=*&srsearch=";
 
 // const pageURL = "href=http://en.wikipedia.org/?curid=${pageid}";
 
