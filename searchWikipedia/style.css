@@ -59,17 +59,21 @@ body {
 
 /* FORM */
 .form {
+  width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   gap: 0.5rem;
 }
 
 .input {
-  padding: 0 0.5rem;
+  width: 100%;
+  padding: 0.2rem 0.7rem;
   flex: 1;
   line-height: 1.5;
   font-size: 1.3rem;
+  border: 1px solid thistle;
+  border-radius: 10px;
 }
 
 .btn {
@@ -107,7 +111,7 @@ body {
   height: auto;
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
