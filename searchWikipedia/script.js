@@ -30,6 +30,7 @@ form.addEventListener("submit", (e) => {
   const inputValue = input.value;
   if (!inputValue) {
     errorEmpty.classList.remove("hidden");
+    results.textContent = "";
     return;
   }
   fetchWiki(inputValue);
@@ -44,6 +45,7 @@ async function fetchWiki(searchValue) {
 
     if (results.length < 1) {
       errorResults.classList.remove("hidden");
+      loading.classList.add("hidden");
       return;
     }
     showResults(results);

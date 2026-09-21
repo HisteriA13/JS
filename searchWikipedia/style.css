@@ -59,6 +59,7 @@ body {
 
 /* FORM */
 .form {
+  height: 50px;
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
@@ -70,15 +71,21 @@ body {
   flex: 1;
   line-height: 1.5;
   font-size: 1.3rem;
-  border: 1px solid thistle;
-  border-radius: 10px;
+  border: none;
+  border-bottom: 3px solid thistle;
+  outline: none;
+}
+
+input:focus {
+  border-top: 3px solid thistle;
+  border-bottom: 3px solid thistle;
 }
 
 .btn {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-weight: 600;
-  background: linear-gradient(90deg, thistle, white, thistle);
-  color: #000;
+  background: radial-gradient(circle, white 30%, thistle);
+  color: #333;
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
@@ -89,12 +96,11 @@ body {
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background-size: 33%;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ERROR */
-.errorEmpty,
-.errorNetwork {
+.error {
   margin: 1rem;
   color: red;
 }
