@@ -1,3 +1,24 @@
+// THEME
+const themeCheckbox = document.getElementById("theme");
+const theme = localStorage.getItem("theme");
+
+if (theme) {
+  document.documentElement.setAttribute("data-theme", "dark");
+  if (theme === "dark") {
+    themeCheckbox.checked = true;
+  }
+}
+
+themeCheckbox.addEventListener("change", function () {
+  if (this.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.removeItem("theme");
+  }
+});
+
 // list=search - perform a full text search
 // srsearch="inputValue" - search for page titles or content matching  this value.
 // srlimit=20 How many total pages to return.
