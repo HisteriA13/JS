@@ -1,3 +1,16 @@
+:root {
+  --bg-color: rgb(204, 204, 204);
+  --heading-color: rgb(114, 70, 114);
+  --card-bg: rgb(245, 245, 245);
+  --card-color: rgb(30, 30, 30);
+}
+
+[data-theme="dark"] {
+  --bg-color: rgb(18, 18, 18);
+  --card-bg: rgb(30, 30, 30);
+  --card-color: rgb(245, 245, 245);
+}
+
 *,
 *::before,
 *::after {
@@ -12,16 +25,58 @@
   left: 0;
   width: 10%;
   min-width: 60px;
-  filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(250%)
-    hue-rotate(261deg) brightness(91%) contrast(84%);
+  filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1439%)
+    hue-rotate(251deg) brightness(89%) contrast(88%);
 }
 
 body {
-  min-height: calc(100dvh - 100px);
+  min-height: calc(100dvh - 50px - 1rem);
+  background: var(--bg-color);
   padding: 50px 1rem 1rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+/* THEME */
+.theme {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.theme input[type="checkbox"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(243, 243, 243);
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.switch::before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 3px;
+  top: 2px;
+  background: url(img/sun.png);
+  background-size: 100%;
+  transition: 0.4s;
+}
+
+input:checked + .switch::before {
+  background: url(img/moon.png) center no-repeat;
+  background-size: 20px;
+  transform: translateX(23px);
 }
 
 .container {
@@ -53,7 +108,7 @@ body {
   margin: 2rem 0;
   font-family: sans-serif;
   font-size: clamp(1.9rem, 4vw + 1rem, 3rem);
-  color: thistle;
+  color: var(--heading-color);
   text-shadow: 0 0 4px;
 }
 
@@ -71,12 +126,14 @@ body {
   flex: 1;
   line-height: 1.5;
   font-size: 1.3rem;
+  background: #f3f3f3;
   border: none;
-  border-bottom: 3px solid thistle;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #d8bfd8;
   outline: none;
 }
 
-input:focus {
+.input:focus {
   border-top: 3px solid thistle;
   border-bottom: 3px solid thistle;
 }
@@ -121,8 +178,8 @@ input:focus {
 
 a {
   text-decoration: none;
-  background: thistle;
-  color: #333;
+  background: var(--card-bg);
+  color: var(--card-color);
   border-radius: 5px;
   padding: 1rem;
   transition: 0.5s;
