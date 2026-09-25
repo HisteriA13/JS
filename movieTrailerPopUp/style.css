@@ -18,6 +18,7 @@ body {
   top: 0;
   left: 0;
   width: 10%;
+  min-width: 60px;
   filter: brightness(0) saturate(100%) invert(89%) sepia(36%) saturate(300%)
     hue-rotate(333deg) brightness(98%) contrast(102%);
 }

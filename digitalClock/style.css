@@ -25,6 +25,7 @@ body {
   top: 0;
   left: 0;
   width: 10%;
+  min-width: 60px;
   filter: brightness(0) saturate(100%) invert(64%) sepia(57%) saturate(2308%)
     hue-rotate(343deg) brightness(100%) contrast(98%);
 }

@@ -13,6 +13,7 @@
   top: 0;
   left: 0;
   width: 10%;
+  min-width: 60px;
   filter: brightness(0) saturate(100%) invert(68%) sepia(70%) saturate(839%)
     hue-rotate(359deg) brightness(101%) contrast(103%);
 }
