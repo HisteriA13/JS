@@ -20,8 +20,14 @@ Custom Wikipedia search using API
 
 - `try...catch`
 
+- Theme toggle
+
 ## Screenshots
 
 Index
 
-Search
+<img src="screenshots/index.png" alt="" style="width: 400px; height: auto;">
+
+Dark theme
+
+<img src="screenshots/darkTheme.png" alt="" style="width: 400px; height: auto;">
