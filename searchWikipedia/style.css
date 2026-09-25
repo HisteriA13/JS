@@ -1,15 +1,18 @@
 :root {
   --bg-color: rgb(204, 204, 204);
   --heading-color: rgb(114, 70, 114);
+  --switch-color: rgb(245, 245, 245);
   --input-color: rgb(245, 245, 245);
   --input-text-color: rgb(30, 30, 30);
   --btn-color: rgb(30, 30, 30);
+  --loading-color: rgb(114, 70, 114);
   --card-bg: rgb(245, 245, 245);
   --card-color: rgb(30, 30, 30);
 }
 
 [data-theme="dark"] {
   --bg-color: rgb(18, 18, 18);
+  --switch-color: rgb(30, 30, 30);
   --input-color: rgb(30, 30, 30);
   --input-text-color: rgb(245, 245, 245);
   --btn-color: rgb(245, 245, 245);
@@ -62,7 +65,7 @@ body {
 .switch {
   position: absolute;
   inset: 0;
-  background-color: rgb(243, 243, 243);
+  background: var(--switch-color);
   border-radius: 15px;
   transition: 0.4s;
 }
@@ -92,6 +95,10 @@ input:checked + .switch::before {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.loading {
+  stroke: var(--loading-color);
 }
 
 /* HEADING */
