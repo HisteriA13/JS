@@ -75,6 +75,27 @@ ul a {
   text-transform: uppercase;
 }
 
+/* --------------------------------- ACTIVE --------------------------------- */
+#logo.active {
+  filter: brightness(0) saturate(100%) invert(3%) sepia(6%) saturate(77%)
+    hue-rotate(314deg) brightness(106%) contrast(78%);
+}
+.nav.active {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.nav.active a {
+  color: #222;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #d1210e;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                    HERO                                    */
 /* -------------------------------------------------------------------------- */
@@ -126,7 +147,7 @@ h1 {
 
 h2 {
   display: inline-block;
-  scroll-margin-top: 110px;
+  scroll-margin-top: 100px;
   margin-bottom: 20px;
   border-bottom: 2px dashed #555;
 }
