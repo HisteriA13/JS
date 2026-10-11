@@ -9,10 +9,23 @@
 html {
   scroll-behavior: smooth;
 }
-#logo {
-  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
-    hue-rotate(315deg) brightness(106%) contrast(78%);
+
+body {
+  color: #222;
+  line-height: 1.5;
+  padding-bottom: 50px;
 }
+
+#logo {
+  width: 100%;
+  min-width: 60px;
+  filter: brightness(0) saturate(100%) invert(94%) sepia(3%) saturate(44%)
+    hue-rotate(314deg) brightness(88%) contrast(90%);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
 
 .nav {
   position: fixed;
@@ -21,7 +34,6 @@ html {
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
-  z-index: 66;
 }
 
 .nav-container {
@@ -38,21 +50,77 @@ ul {
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin-left: 20px;
+}
+
+@media (width < 476px) {
+  .nav .nav-container {
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 100px;
+  }
+
+  ul {
+    margin: 0;
+  }
 }
 
 ul a {
+  color: #ccc;
   padding: 10px;
   text-decoration: none;
-  font-size: 2rem;
-  color: #ccc;
+  text-transform: uppercase;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
 
 .container {
-  height: 100dvh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
+/* .container {
+  height: 100dvh;
+} */
+
 .hero-container {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ccc;
 }
 
 h2 {
