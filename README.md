@@ -26,6 +26,7 @@ Each folder in this repository contains an individual solo project with its own 
 | [BMI Calculator](https://histeria13.github.io/JS/bmiCalculator/)              | [./bmiCalculator/](./bmiCalculator/)                       |              BMI Calculator              | JS Object, `setTimeout()`                                 | ✅ Completed |
 | [Wikipedia Search](https://histeria13.github.io/JS/searchWikipedia/)          | [./searchWikipedia/](./searchWikipedia/)                   |             Wikipedia Search             | API, async, `classList`, theme toggle                     | ✅ Completed |
 | [Fixed Navbar](https://histeria13.github.io/JS/navbarFixed-scrollFollow/)     | [./navbarFixed-scrollFollow/](./navbarFixed-scrollFollow/) | Fixed Navbar with Links Following Scroll | window, `scrollY`, `offset`, Fixed navbar                 | ✅ Completed |
+| [Pinterest Grid](https://histeria13.github.io/JS/gridPinterest/)              | [./gridPinterest/](./gridPinterest/)                       |           Pinterest-like Grid            | `createElement()`, `appendChild()`                        | ✅ Completed |
 
 > _Note: This project list is continuously updated as new projects are created._
 
