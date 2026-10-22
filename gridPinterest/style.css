@@ -6,12 +6,54 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  min-height: 100dvh;
+  padding: 70px 5px 50px 5px;
+  background: #000;
+}
+
 #logo {
   position: absolute;
   top: 0;
   left: 0;
   width: 10%;
   min-width: 60px;
-  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
-    hue-rotate(315deg) brightness(106%) contrast(78%);
+  filter: brightness(0) saturate(100%) invert(57%) sepia(59%) saturate(1885%)
+    hue-rotate(154deg) brightness(101%) contrast(103%);
+}
+
+main {
+  column-count: 6;
+  gap: 10px;
+}
+
+figure {
+  padding: 5px;
+  border: 2px solid #ccc;
+  break-inside: avoid;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (width < 1200px) {
+  main {
+    column-count: 5;
+  }
+}
+@media (width < 768px) {
+  main {
+    column-count: 4;
+  }
+}
+@media (width < 600px) {
+  main {
+    column-count: 3;
+  }
 }
