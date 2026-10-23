@@ -1,5 +1,5 @@
 const mainEl = document.querySelector("main");
-const imgSource = "https://picsum.photos/200/";
+const imgSource = "https://picsum.photos/200/"; /* lorem ipsum random photo */
 
 for (let i = 0; i < 30; i++) {
   const figure = document.createElement("figure");
@@ -10,6 +10,8 @@ for (let i = 0; i < 30; i++) {
     100; /* random height 100px - 500px */
 
   img.src = `${imgSource}${randomHeight}`;
+  img.alt = `Random image${i + 1}`;
+
   figure.appendChild(img);
   mainEl.appendChild(figure);
 }
