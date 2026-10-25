@@ -22,12 +22,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #1a1614;
   line-height: 1.5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
   position: relative;
+  /* card width = 300px; gap = 50px; 3cards + 2gaps = 1000px */
   max-width: 1000px;
   width: 100%;
   height: 400px;
@@ -37,8 +39,9 @@ body {
 .cards {
   /* posision is for js changing */
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   display: grid;
   grid-template-columns: repeat(6, 300px);
   gap: 50px;
@@ -46,7 +49,7 @@ body {
 }
 
 .card {
-  border: 1px solid #ccc;
+  border: 1px solid #4a3e37;
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -54,11 +57,11 @@ body {
 img:not(#logo) {
   display: block;
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
 .content {
-  color: #4e4e4e;
+  color: #e8e2d8;
   padding: 1rem;
 }
