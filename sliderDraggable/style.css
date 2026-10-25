@@ -12,6 +12,53 @@
   left: 0;
   width: 10%;
   min-width: 60px;
-  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
-    hue-rotate(315deg) brightness(106%) contrast(78%);
+  filter: brightness(0) saturate(100%) invert(16%) sepia(35%) saturate(6972%)
+    hue-rotate(344deg) brightness(87%) contrast(86%);
+}
+
+body {
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.cards {
+  /* posision is for js changing */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 300px);
+  gap: 50px;
+  pointer-events: none; /* MUST */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+img:not(#logo) {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  color: #4e4e4e;
+  padding: 1rem;
 }
