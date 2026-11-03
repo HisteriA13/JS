@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="description" content="Learning web development">
     <meta name="author" content="Hilda Hadžić">
@@ -15,7 +15,31 @@
 <body>
 
     <img src="../$logo/logo.svg" alt="logo" id="logo">
-
+    <div class="container">
+        <div class="display"></div>
+        <div class="buttons">
+            <!-- I noticed that the projects use a `data-value` attribute that matches the button text. However, since I don't have icons (or any other symbols) in place of the operators, I decided to use `textContent` instead of `data-value` for cleaner code. (see script.js)-->
+            <button class="btn clear" data-action="clear">AC</button>
+            <button class="btn clear_one" data-action="clear_one">C</button>
+            <button class="btn operator">%</button>
+            <button class="btn operator">/</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operator">*</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn operator">-</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn operator">+</button>
+            <button class="btn">.</button>
+            <button class="btn">0</button>
+            <button class="btn equal" data-action="calculate">=</button>
+        </div>
+    </div>
 
     <script src="script.js" defer></script>
 </body>
