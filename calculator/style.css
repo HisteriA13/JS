@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: monospace, serif;
+  -webkit-tap-highlight-color: transparent; /* remove blue square on mobile when btn is pressed */
 }
 
 body {
