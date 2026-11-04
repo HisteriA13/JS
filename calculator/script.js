@@ -16,7 +16,10 @@ buttons.forEach((btn) =>
       display.textContent = display.textContent.slice(0, -1);
     else if (action === "calculate") {
       try {
-        display.textContent = eval(display.textContent);
+        // display.textContent = eval(display.textContent);
+        /* I read that eval() is not the safe option. Even this is a simple learning project, I've decided to change eval() to new Function */
+        const result = new Function(`return ${display.textContent}`)();
+        display.textContent = result;
       } catch (err) {
         display.textContent = "Error";
         display.style.color = "rgba(255, 69, 0)";
