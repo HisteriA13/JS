@@ -53,6 +53,7 @@ body {
   border: 1px solid #4a3e37;
   border-radius: 1rem;
   overflow: hidden;
+  user-select: none;
 }
 
 img:not(#logo) {
