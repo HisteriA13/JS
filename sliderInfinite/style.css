@@ -114,7 +114,7 @@ figure img {
 
 .name {
   position: absolute;
-  bottom: 8rem;
+  bottom: 7rem;
   font-size: clamp(1rem, 0.5rem + 1.5vw, 1.25rem);
   text-align: center;
   color: #f9fafb;
