@@ -1,3 +1,7 @@
+:root {
+  --white: #f9fafb;
+}
+
 *,
 *::before,
 *::after {
@@ -6,12 +10,188 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0a0a;
+  transform-style: preserve-3d;
+}
+
 #logo {
   position: absolute;
   top: 0;
   left: 0;
   width: 10%;
   min-width: 60px;
-  filter: brightness(0) saturate(100%) invert(70%) sepia(12%) saturate(1035%)
-    hue-rotate(315deg) brightness(106%) contrast(78%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2279%)
+    hue-rotate(172deg) brightness(111%) contrast(96%);
+}
+
+h1 {
+  position: absolute;
+  top: 5rem;
+  color: var(--white);
+  font-size: clamp(2rem, 1rem + 4vw, 4.5rem);
+  line-height: 1.1;
+  font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item {
+  position: absolute;
+  top: calc(50% - 150px); /* height / 2 */
+  left: calc(50% - 100px); /* width / 2 */
+  width: 200px;
+  height: 300px;
+  background: #141414;
+  padding: 5px;
+  border: 3px solid #2c2c2c;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  user-select: none;
+  transition:
+    transform 0.5s ease,
+    scale 0.5s ease;
+  overflow: hidden;
+}
+
+.item:nth-child(1) {
+  transform: translate3d(-250px, 0, 0) scale(0.8) rotateY(25deg);
+  z-index: 1;
+}
+
+.item:nth-child(2) {
+  transform: translate3d(-250px, 0, 0) scale(0.8) rotateY(25deg);
+  z-index: 2;
+}
+
+.item:nth-child(3) {
+  transform: translate3d(-150px, 0, 0) scale(0.9) rotateY(15deg);
+  z-index: 3;
+}
+
+.item:nth-child(4) {
+  transform: translate3d(0, 0, 0) scale(1) rotateY(0);
+  z-index: 4;
+}
+
+.item:nth-child(5) {
+  transform: translate3d(150px, 0, 0) scale(0.9) rotateY(-15deg);
+  z-index: 3;
+}
+
+.item:nth-child(6) {
+  transform: translate3d(250px, 0, 0) scale(0.8) rotateY(-25deg);
+  z-index: 2;
+}
+
+.item:nth-child(7) {
+  transform: translate3d(250px, 0, 0) scale(0.8) rotateY(-25deg);
+  z-index: -1;
+}
+
+.btns {
+  position: absolute;
+  bottom: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.arrow {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+  transform: rotate(-45deg);
+}
+
+.arrow:last-child::before {
+  content: "";
+  position: absolute;
+  left: initial;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+  transform: rotate(135deg);
+}
+
+@media (max-width: 768px) {
+  /* .item {
+    width: 150px;
+    height: 200px;
+    top: calc(50% - 100px);
+    left: calc(50% - 75px);
+  } */
+
+  .item:nth-child(1) {
+    display: none;
+  }
+
+  .item:nth-child(2) {
+    transform: translate3d(-85px, 0, 0) scale(0.8);
+    z-index: 2;
+  }
+  .item:nth-child(3) {
+    transform: translate3d(-40px, 0, 0) scale(0.9);
+    z-index: 3;
+  }
+  .item:nth-child(4) {
+    transform: translate3d(0, 0, 0) scale(1);
+    z-index: 5; /* Centralna slika je iznad svih */
+  }
+  .item:nth-child(5) {
+    transform: translate3d(40px, 0, 0) scale(0.9);
+    z-index: 3;
+  }
+  .item:nth-child(6) {
+    transform: translate3d(85px, 0, 0) scale(0.8);
+    z-index: 2;
+  }
+  .item:nth-child(7) {
+    display: none;
+  }
 }
