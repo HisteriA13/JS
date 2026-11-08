@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Nunito", sans-serif;
   background: #0a0a0a;
   transform-style: preserve-3d;
 }
@@ -36,7 +37,6 @@ h1 {
   color: var(--white);
   font-size: clamp(2rem, 1rem + 4vw, 4.5rem);
   line-height: 1.1;
-  font-family: sans-serif;
 }
 
 .container {
@@ -112,9 +112,20 @@ figure img {
   z-index: -1;
 }
 
+.name {
+  position: absolute;
+  bottom: 8rem;
+  font-size: clamp(1rem, 0.5rem + 1.5vw, 1.25rem);
+  text-align: center;
+  color: #f9fafb;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  white-space: pre-line; /* respect \n in js */
+}
+
 .btns {
   position: absolute;
-  bottom: 5rem;
+  bottom: 2rem;
   display: flex;
   gap: 2rem;
 }
@@ -123,20 +134,22 @@ figure img {
   position: relative;
   width: 50px;
   height: 50px;
-  border: 2px solid var(--white);
-  border-radius: 50%;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid var(--white);
+  border-radius: 50%;
   opacity: 0.5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .arrow:hover {
   opacity: 1;
 }
 
-.arrow::before {
+.arrow::before,
+.arrow:last-child::before {
   content: "";
   position: absolute;
   left: 20px;
@@ -148,25 +161,12 @@ figure img {
 }
 
 .arrow:last-child::before {
-  content: "";
-  position: absolute;
   left: initial;
   right: 20px;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid var(--white);
-  border-left: 2px solid var(--white);
   transform: rotate(135deg);
 }
 
 @media (max-width: 768px) {
-  /* .item {
-    width: 150px;
-    height: 200px;
-    top: calc(50% - 100px);
-    left: calc(50% - 75px);
-  } */
-
   .item:nth-child(1) {
     display: none;
   }
@@ -175,23 +175,38 @@ figure img {
     transform: translate3d(-85px, 0, 0) scale(0.8);
     z-index: 2;
   }
+
   .item:nth-child(3) {
     transform: translate3d(-40px, 0, 0) scale(0.9);
     z-index: 3;
   }
+
   .item:nth-child(4) {
     transform: translate3d(0, 0, 0) scale(1);
     z-index: 5; /* Centralna slika je iznad svih */
   }
+
   .item:nth-child(5) {
     transform: translate3d(40px, 0, 0) scale(0.9);
     z-index: 3;
   }
+
   .item:nth-child(6) {
     transform: translate3d(85px, 0, 0) scale(0.8);
     z-index: 2;
   }
+
   .item:nth-child(7) {
     display: none;
+  }
+}
+
+@media (height > 930px) {
+  h1 {
+    top: 14rem;
+  }
+
+  .name {
+    bottom: 15rem;
   }
 }
